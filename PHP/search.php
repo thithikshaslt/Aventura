@@ -4,7 +4,6 @@
 <?php
 require_once "functions.php";
 dbConnect();
-
 include "header.php";
 ?>
 

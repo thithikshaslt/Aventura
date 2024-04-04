@@ -27,7 +27,7 @@ body {
 /* Style for title of the page */
 .Site-Title {
   text-align: center;
-  color: white;
+  
   font-family: "Raleway", sans-serif;
   font-size: 60px;
   font-weight: 500;
@@ -44,7 +44,7 @@ body {
 }
 
 .Text {
-  color: white;
+
   text-decoration: none;
 }
 
