@@ -3,21 +3,14 @@ body {
   padding: 0;
 }
 
+.signup-form-wrapper{
+  background-color: black;
+}
 ::-webkit-scrollbar {
   width: 0;
   /* Remove scrollbar space */
   background: transparent;
   /* Optional: just make scrollbar invisible */
-}
-
-/* Style for background video */
-#backgroundVideo {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 #backgroundImage {
@@ -79,6 +72,7 @@ body {
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
+  color: white;
   border-bottom: 1px solid #e27802;
 }
 

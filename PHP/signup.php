@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sign Up</title>
-  <link rel="icon" type="image/png" href="../Images/alps_favicon.png">
-  <meta name="description" content="Log into the website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CSS/signup.css">
   <!-- google fonts api -->
@@ -21,11 +19,10 @@
 <body>
 
   <!-- background images -->
-  <img src="https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" id="backgroundVideo">
-  <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Mobile-Imange" id="backgroundImage">
+  <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" id="backgroundVideo">
 
   <!-- title of website -->
-  <div class="Site-Title"><a href="../index.html" class="Text">TRAVELLOG</a></div>
+  <div class="Site-Title"><a href="../index.html" class="Text">AVENTURA</a></div>
 
   <?php
   require_once "functions.php";
@@ -62,7 +59,7 @@
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
             $id = $row['user_id'];
-            $sql = "INSERT into notifications(user_id, notification) VALUES('$id', 'Welcome to TravelLog')";
+            $sql = "INSERT into notifications(user_id, notification) VALUES('$id', 'Welcome to Aventura')";
             $res = $conn->query($sql);
           }
         }
@@ -76,6 +73,7 @@
   ?>
 
   <!-- login form -->
+  <div class="signup-form-wrapper">
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="signup-form">
     <div class="login-box">
       <h1 id="sutext">Sign Up</h1>
@@ -100,17 +98,17 @@
         <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" required>
       </div>
 
-      <iframe id="t-and-c" src="terms-and-conditions.php" height="100" width="100%" title="Terms and Conditions"></iframe>
       <input type="checkbox" name="Agree" value="Yes" required> <span class="Acc">I Agree to the Terms and Conditions.</span>
 
       <input class="btn" type="submit" value="Sign Up" name="signup">
       <hr>
       <div class="Acc">
         Already have an account?
-        <a href="login.php">Login!</a>
+        <a href="login.php">Login Here</a>
       </div>
     </div>
   </form>
+</div>
 </body>
 
 </html>

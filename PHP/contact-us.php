@@ -39,7 +39,7 @@ if (isset($_POST['sub'])) {
       <!-- contact information of the company -->
       <div class="contact-info">
         <a href="../index.html">
-          <h2>TRAVELLOG</h2>
+          <h2>AVENTURA</h2>
         </a>
         <div class="box">
           <div class="icon">
@@ -57,7 +57,7 @@ if (isset($_POST['sub'])) {
           </div>
           <div class="text">
             <h3>Email</h3>
-            <p>contact@travellog.com</p>
+            <p>contact@aventura.com</p>
           </div>
         </div>
 
