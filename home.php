@@ -3,7 +3,7 @@
 <head>
 	<title>Letstravel</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="images/favicon.png">
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
@@ -19,7 +19,7 @@
         <nav>
           <li><a href="register.html">Get Started</a></li>
           <li><a href="about-us.html">About</a></li>
-          <li><a href="PHP/contact-us.php">Contact</a></li>
+
         </nav>
       </header>
 
