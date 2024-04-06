@@ -84,19 +84,6 @@ header nav li{
     padding: 0 15px;
 }
 
-@media (max-width: 800px) {
-
-    #content {
-      flex-direction: column;
-    }
-    header {
-        /* padding: 20px 50px; */
-        flex-direction: column;
-    }
-    header h2 {
-        margin-bottom: 12px;
-    }
-}
 
 /******************************************* BODY CONTENT ***********************************/
 #content {
@@ -153,16 +140,7 @@ header nav li{
 }
 
 /********************************************* CONTENT STYLING ************************************/
-.Site-Title {
-  text-align: center;
-  color: lightgray;
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-  flex: 1;
-  padding: 30px auto;
-  padding-top: 50px;
-}
+
 
 .Tagline {
   color: white;
