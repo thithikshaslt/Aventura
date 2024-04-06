@@ -1,7 +1,4 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 session_start();
 
 if($_SESSION['status']=='loggedin')
@@ -10,7 +7,7 @@ if($_SESSION['status']=='loggedin')
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Letstravel</title>
+    <title>Aventura</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -30,7 +27,7 @@ if($_SESSION['status']=='loggedin')
 <body>
 <!--navbar-->
 <div class="row" id="bar">
-    <div class="col-sm-10 heading" id="up">Letstravel</div>
+    <div class="col-sm-10 heading" id="up">AVENTURA</div>
     <!--<div class="col-sm-2" id="log"><a id="logout" href="logout.php" name="logout_link">Logout</a></div>-->
     <div class="col-sm-2" id="log">
       <form action="dashboard.php" method="post">
@@ -366,7 +363,7 @@ if(isset($_POST['deleteTrip']))
     if($resultx == True)
     {
     	echo "<script type='text/javascript'>alert('Trip Deleted Successfully'); window.location='dashboard.php'</script>";	
-    	$email = "shivanee.j@somaiya.edu"; //replace email
+    	$email = "slthithiksha@gmail.com"; //replace email
     	$sqlm="SELECT FirstName FROM user WHERE Email='".$email."'";
         $fnamem = mysqli_query($conn,$sqlm);                                
        	$nameh = mysqli_fetch_assoc($fnamem);
@@ -382,30 +379,6 @@ if(isset($_POST['deleteTrip']))
       		$temp12 =  mysqli_fetch_assoc($result12);
       		$locs12=$locs12." - ".$temp12["locations"];
     	}
-		require("C:/xampp/htdocs/Aventura/PHPMailer/src/PHPMailer.php");
-		require("C:/xampp/htdocs/Aventura/PHPMailer/src/SMTP.php");
-		require("C:/xampp/htdocs/Aventura/PHPMailer/src/Exception.php");
-	    $mail = new PHPMailer;
-	    $mail->IsSMTP(); // enable SMTP
-
-	    //$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-	    $mail->SMTPAuth = true; // authentication enabled
-	    $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-	    $mail->Host = "smtp.gmail.com";
-	    $mail->Port = 465; // or 587
-	    $mail->IsHTML(true);
-	    $mail->Username = 'help.letstravel@gmail.com';
-	    $mail->Password = 'help@LT123';
-	    $mail->SetFrom("help.letstravel@gmail.com","Letstravel");
-	    $mail->Subject = "Update On Your Trip With Letstravel";
-	    $mail->Body = "Dear ".$namem.",<br>We regret to inform you that your trip to ".$locs12." was cancelled by our team due to some issues. We are extremely sorry for the inconvenience caused. <br> <br> You will recieve your refund within <b>7 working days</b>. In case of any disrepancy, please write to our team at <i>help@letstravel.com</i>.<br><br>-Best Regards, <br> <i>Team Letstravel</i>";  
-	    $mail->AddAddress($email); // Add recipients
-
-	     if(!$mail->Send()) {
-	        echo "Mailer Error: " . $mail->ErrorInfo;
-	     } else {
-	        echo "Message has been sent";
-	     }
     }  
 
 }

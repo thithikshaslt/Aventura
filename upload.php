@@ -21,7 +21,7 @@ if(isset($_POST['create'])){
 	$tgName=$_POST['tgName'];
 	$tgCont=$_POST['tgCont'];
 	$status=1;
-	$createdBy="shivaneej02@gmail.com";
+	$createdBy="slthithiksha@gmail.com";
 
 	$thumbnail=$_FILES['tn-uploaded'];
   $itinerary=$_FILES['it-uploaded'];
@@ -181,21 +181,7 @@ if(isset($_POST['JoinTrip'])){
         $email = $_POST['email'];
         ?>
 
-        <form action="payment.php" id="myform" method="post">
-        <input type="hidden" name="cost" id="costforpayment" value="<?php echo $cost; ?>">
-        <input type="hidden" name="tripKaID" id="tripIdForMail" value="<?php echo $tripKaID;?>">
-        <input type="hidden" name="email" id="UseremailForMail" value="<?php echo $email;?>">
-        <input class="form-check-input yellowBtn bottomBtn" type="submit" name="PayTrip" value="Confirm Booking" style="background-color: #ffc312;
-            border: none;
-            width: 30%;
-            border-radius: 5px;
-            color: white;
-            height: 10%;
-            margin-left: 35%;
-            top: 50%;
-            position: absolute;
-            font-size: 24px;">
-        </form>
+        
 
         <?php
         
