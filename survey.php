@@ -8,7 +8,7 @@ if($_SESSION['status']=='loggedin')
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Letstravel</title>
+		<title>Aventura</title>
 	<link rel="shortcut icon" href="images/favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,7 +21,7 @@ if($_SESSION['status']=='loggedin')
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand heading" href="home.php?status=loggedin"><b>Letstravel</b></a>
+        <a class="navbar-brand heading" href="home.php?status=loggedin"><b>Aventura</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

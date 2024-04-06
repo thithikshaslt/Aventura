@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Letstravel</title>
+	<title>Aventura</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<meta charset="utf-8">
@@ -199,7 +199,7 @@
       		<div class="row">
         		<div class="col-md-6 mt-md-0 mt-3">
           			<h6 class="footerText">Contact Us</h6>
-          			<p class="footerText"><i class="fa fa-envelope icon" aria-hidden="true"></i> help@letstravel.com</p>
+          			<p class="footerText"><i class="fa fa-envelope icon" aria-hidden="true"></i> aventura.com</p>
           			<p class="footerText"><i class="fa fa-phone icon" aria-hidden="true"></i> 1800-676-333 (9:00 am to 9:00 pm)</p>	
         		</div>
         		<hr class="clearfix w-100 d-md-none pb-3">

@@ -8,7 +8,7 @@ if($_SESSION['status']=='loggedin')
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Letstravel</title>
+		<title>Aventura</title>
 	<link rel="shortcut icon" href="images/favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,7 +21,7 @@ if($_SESSION['status']=='loggedin')
 </head>
 <body style="background-color: #000000;">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand heading" href="home.php?status=loggedin"><b>Letstravel</b></a>
+        <a class="navbar-brand heading" href="home.php?status=loggedin"><b>Aventura</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -140,7 +140,7 @@ if($_SESSION['status']=='loggedin')
             	'<div class="result" style="margin-left: 20%;">
                 <img src="images/error.png" style="width: 20%;">
                 <div class="info">
-                    <p style="color: #fafafa;">We are sorry! We could not find any location to match your requirements. Click <a href="home.php?status=loggedin">here</a> to browse other trips planned by Letstravel.</p>
+                    <p style="color: #fafafa;">We are sorry! We could not find any location to match your requirements. Click <a href="home.php?status=loggedin">here</a> to browse other trips planned by Aventura.</p>
                 </div>
             </div>';
             }

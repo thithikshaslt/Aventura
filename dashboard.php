@@ -382,9 +382,9 @@ if(isset($_POST['deleteTrip']))
       		$temp12 =  mysqli_fetch_assoc($result12);
       		$locs12=$locs12." - ".$temp12["locations"];
     	}
-		require("C:/xampp/htdocs/Letstravel/PHPMailer/src/PHPMailer.php");
-		require("C:/xampp/htdocs/Letstravel/PHPMailer/src/SMTP.php");
-		require("C:/xampp/htdocs/Letstravel/PHPMailer/src/Exception.php");
+		require("C:/xampp/htdocs/Aventura/PHPMailer/src/PHPMailer.php");
+		require("C:/xampp/htdocs/Aventura/PHPMailer/src/SMTP.php");
+		require("C:/xampp/htdocs/Aventura/PHPMailer/src/Exception.php");
 	    $mail = new PHPMailer;
 	    $mail->IsSMTP(); // enable SMTP
 
