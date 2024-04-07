@@ -65,13 +65,9 @@
       		</div>
     	</div>
     	
-    	<div class="text-center py-3">
-    		<a class="social-icon" href="https://www.facebook.com/"><i class="fa fa-facebook mr-md-5 mr-3 social-icon"> </i></a>
-          	<a class="social-icon" href="https://www.twitter.com/"><i class="fa fa-twitter mr-md-5 mr-3 social-icon"> </i></a>
-       		<a class="social-icon" href="https://www.instagram.com/"><i class="fa fa-instagram mr-md-5 mr-3 social-icon"> </i></a>
-    	</div>
+    	
     	<div class="footer-copyright text-center py-3 madeby">
-    		Made by<font style="color: #ffc312;"> Grusha Dharod, Vicky Daiya & Shivanee Jaiswal</font>
+    		<font style="color: #ffc312;"> AVENTURA &copy; 2024</font>
     	</div>
   	</footer>
 

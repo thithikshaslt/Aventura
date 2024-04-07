@@ -7,7 +7,7 @@ header {
     font-weight: 500;
     align-items: center;
     animation: 1s fadein 0.5s forwards;
-    
+    margin-top: 20px;
     padding: 20px auto;
 }
 .content {
@@ -17,7 +17,6 @@ header {
     flex-direction: column;
     min-height: 100vh;
 }
-
 
 
 .page-footer {
@@ -74,14 +73,14 @@ header h2 {
   }
   
   .Tagline h1 {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 40px;
     margin-bottom: 5px;
     display: inline-block;
   }
   
   .Tagline h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10%;
@@ -92,7 +91,7 @@ header h2 {
     color: white;
     background-color: #292c2f;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 20px;
     padding: 10px 15px;
   }
@@ -219,3 +218,4 @@ a.footerText{
 {
     text-decoration: none;
 }
+
