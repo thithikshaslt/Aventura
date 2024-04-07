@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.onload = function() {
     var image = document.querySelector(".content");
 
     var images = [
@@ -20,4 +20,4 @@ document.addEventListener("DOMContentLoaded", function() {
     image.style.backgroundSize = "cover";
     image.style.backgroundRepeat = "no-repeat";
     image.style.backgroundPosition = "center";
-});
+};

@@ -10,6 +10,21 @@ header {
     
     padding: 20px auto;
 }
+.content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.page-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
 
 ul,
 nav {
