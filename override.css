@@ -1,6 +1,6 @@
 header {
     width: 95%;
-    color: black;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
@@ -19,7 +19,7 @@ nav {
 a{
     text-decoration: none;
     opacity: 0.75;
-    color: black;
+    color: #fff;
 }
 
 a:hover{
@@ -49,7 +49,7 @@ header h2 {
   
   
   .Tagline {
-    color: black;
+    color: #ffff;
     margin: 30px;
     display: flex;
     flex-direction: column;
