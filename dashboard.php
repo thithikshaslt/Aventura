@@ -10,13 +10,14 @@ if($_SESSION['status']=='loggedin')
     <title>Aventura</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png">
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="override.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -61,14 +62,6 @@ if($_SESSION['status']=='loggedin')
     		<div class="col-sm-6">      
       			<select name="locs[]" multiple="" class="label ui selection fluid search dropdown" id="tripLocs" onChange="getLocs();">
 			      <option value="">Select Locations</option>
-			      <!--option value="Delhi">Delhi</option>
-			      <option value="Mumbai">Mumbai</option>
-			      <option value="Agra">Agra</option>
-			      <option value="Chennai">Chennai</option>
-			      <option value="Kolkata">Kolkata</option>
-			      <option value="Goa">Goa</option>
-			      <option value="Pune">Pune</option>
-			      <option value="Bangalore">Bangalore</option>-->
                               
             <?php    
             $servername = 'localhost';
@@ -210,6 +203,8 @@ if($_SESSION['status']=='loggedin')
     $result2 = mysqli_query($conn,$sql2);
     $rows2 = mysqli_num_rows($result2);
     $temp =  mysqli_fetch_assoc($result2);
+    
+
     $locs = $temp["locations"];
     for($j=1;$j<$rows2;$j++)
     {
@@ -382,5 +377,5 @@ if(isset($_POST['deleteTrip']))
     }  
 
 }
-//mysqli_close($conn);
+mysqli_close($conn);
 ?>
