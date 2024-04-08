@@ -22,7 +22,7 @@ if(isset($_POST['loginbtn']))
 			$_SESSION['user_email']=$_POST['userEmail'];
 			$_SESSION['user_password']=$_POST['userPassword'];			
 			$_SESSION['status']="loggedin";
-			header("location:home.php?status=loggedin");	
+			header("location:upcoming.php?status=loggedin");	
 		}
 		else
 		{
