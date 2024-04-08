@@ -51,6 +51,16 @@
 
 	<?php
 
+  $servername = 'localhost';
+  $username = 'root';
+  $password = '';
+  $db='letstravel';
+  $conn = mysqli_connect($servername,$username,$password,$db);
+  if (!$conn) 	
+  {			
+      die("Connection failed: " . mysqli_connect_error());
+  }
+
   echo '<!--upcoming section-->
   <div class="sectionHeader" id="Upcoming">
     <div class="header">
@@ -60,6 +70,7 @@
     <div id ="cards" class="row mx-auto">';
 
   $sql="SELECT * FROM trip WHERE Status=1";
+  
   $result = mysqli_query($conn,$sql);
   $rows = mysqli_num_rows($result);
   if($rows<=4)
