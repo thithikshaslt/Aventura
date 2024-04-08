@@ -30,7 +30,7 @@ bluish grey color: #2c3e50*/
     align-content: center;
     top: 10%;
     position: relative;
-	
+    border-radius: 5px; /* Add border radius for rounded corners */
 }
 .adminForm
 {
@@ -39,7 +39,7 @@ bluish grey color: #2c3e50*/
 }
 .formbg
 {
-	background-image: url("images/dark.jpg");
+	background-image: url("https://images.pexels.com/photos/2427813/pexels-photo-2427813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 	background-size: cover;
 }
 #userLoginWindow{
@@ -86,7 +86,7 @@ border:0.5px solid lightgrey;
 	height: 5%;
 	border-radius: 5px;
 	padding: 5px;
-	background-color: #ffc312;
+	background-color: #15a18ef4;
 	color: white;
 	font-family: 'Montserrat',sans-serif;
 	font-size: 16px;
@@ -180,7 +180,7 @@ border:0.5px solid lightgrey;
 }
 .downloadFile{
 	text-decoration: none;
-	color: #ffc312;
+	color: #15a18ef4 ; 
 }
 #terms{
 	font-family: 'Montserrat',sans-serif;
@@ -200,14 +200,14 @@ border:0.5px solid lightgrey;
 }
 .icon{
 	padding: 0px;
-	color: #ffc312;
+	color:  #15a18ef4;
 }
 .social-icon{
 	color: #eaeaea;
 	padding: 0px;
 }
 .social-icon:hover{
-	color: #ffc312;
+	color:  #15a18ef4;
 }
 .madeby{
 	color: #898989;
@@ -215,7 +215,7 @@ border:0.5px solid lightgrey;
 	font-size: 12px;
 }
 .madeBy font{
-	color: #ffc312;
+	color:  #15a18ef4;
 }
 
 #fn, #ln, #eid, #mobile, #cpwd
