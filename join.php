@@ -138,7 +138,7 @@ if($_SESSION['status']=='loggedin')
               	
            }	
               ?></td>
-        <td><input type='text' pattern='([0-9]{16})' maxlength='16' name='aadharno0'></td>
+        <td><input type='text' pattern='([0-9]{12})' maxlength='12' name='aadharno0'></td>
         <td><button onclick='delRow(this)' class="delBtn"><i class='fa fa-trash' aria-hidden='true'></i></button></td>
       </tbody>
     </table>
