@@ -1,8 +1,8 @@
-A web application made using HTML5, CSS3, Bootstrap, JavaScript, jQuery and PHP.	
+A travel web application made using HTML5, CSS3, Bootstrap, JavaScript, jQuery and PHP.	
 
 
 Web users can:
-* view and join trips planned by the organisation
+* view and join trips
 * take up a survey to get recommendations of places to visit
 
 Admin can:
