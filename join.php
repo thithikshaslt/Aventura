@@ -93,12 +93,12 @@ if($_SESSION['status']=='loggedin')
       <tbody>
         <td><?php                            
                               
-                                $sql="SELECT FirstName FROM user WHERE Email='".$email."'";
-                                $fname = mysqli_query($conn,$sql);                                
-                                while ($row=$fname->fetch_assoc()) {                              
-                              echo "<input type='text' name='fname0' value='".$row['FirstName']."'>";
-                              }
-                                  ?></td>
+                $sql="SELECT FirstName FROM user WHERE Email='".$email."'";
+                $fname = mysqli_query($conn,$sql);                                
+                while ($row=$fname->fetch_assoc()) {                              
+              echo "<input type='text' name='fname0' value='".$row['FirstName']."'>";
+              }
+                  ?></td>
         <td><?php                            
                              
                                 $sql="SELECT LastName FROM user WHERE Email='".$email."'";
